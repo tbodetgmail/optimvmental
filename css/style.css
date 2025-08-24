@@ -37,7 +37,7 @@ nav a {
 
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 10%;
   transform: translate(-20%, -50%);
   color: white;
@@ -75,6 +75,12 @@ nav a {
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
+}
+.quattrocento-bold-20 {
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 .empty-container {
 	height: 20vh; /* 10% de la hauteur de l’écran */
