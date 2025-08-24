@@ -77,7 +77,7 @@ nav a {
   font-size: 15px;
 }
 .empty-container {
-	height: 60vh; /* 10% de la hauteur de l’écran */
+	height: 40vh; /* 10% de la hauteur de l’écran */
     display: flex;
 }
 .left-text-50 {
