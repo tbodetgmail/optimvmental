@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #004d40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-20%, -50%);
+  color: white;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.quattrocento-regular {
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quattrocento-bold-49 {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 49px;
+}
+.quattrocento-bold-36 {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+}
+.quattrocento-bold-15 {
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+.empty-container {
+	height: 60vh; /* 10% de la hauteur de l’écran */
+    display: flex;
+}
+.left-text-50 {
+	padding: 0px 0px 0px 200px;
+	width: 50%;
+}
