@@ -50,7 +50,7 @@ header {
 
 /* Section 1 */
 .section-1 {
-  height: 320vh; /* Hauteur demandée */
+  height: 182vh; /* Hauteur demandée */
   background-image: url('../images/Image1.png');
   background-size: cover;
   background-position: center;
