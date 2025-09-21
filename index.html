@@ -11,11 +11,25 @@
   <!-- Header -->
   <header>
     <div class="logo">OptimV</div>
-    <nav class="menu">
+    <!-- Menu desktop -->
+    <nav class="menu-desktop">
       <a href="#accueil">Accueil</a>
       <a href="#a-propos">À propos</a>
       <a href="#programmes">Programmes</a>
       <a href="#contact">Contact</a>
+    </nav>
+    <!-- Menu burger -->
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- Menu mobile -->
+    <nav class="menu-mobile" id="menuMobile">
+      <a href="#accueil" onclick="closeMenu()">Accueil</a>
+      <a href="#a-propos" onclick="closeMenu()">À propos</a>
+      <a href="#programmes" onclick="closeMenu()">Programmes</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
     </nav>
   </header>
 
@@ -56,7 +70,7 @@
         </p>
       </div>
       <div class="image-content">
-        <img src="images/Image3.png" alt="Golfeur dans le bunker, pensif" />
+        <img src="./images/Image3.png" alt="Golfeur dans le bunker, pensif" />
       </div>
     </div>
   </section>

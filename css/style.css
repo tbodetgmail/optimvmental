@@ -32,25 +32,68 @@ header {
   color: white;
 }
 
-.menu {
+/* Menu desktop */
+.menu-desktop {
   display: flex;
   gap: 2rem;
 }
 
-.menu a {
+.menu-desktop a {
   color: white;
   text-decoration: none;
   font-family: 'Quattrocento', serif;
   font-weight: 400;
 }
 
-.menu a:hover {
+.menu-desktop a:hover {
+  text-decoration: underline;
+}
+
+/* Menu burger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Menu mobile */
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  background-color: #004d40;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu-mobile a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Quattrocento', serif;
+  font-weight: 400;
+  padding: 0.8rem 1rem;
+  white-space: nowrap;
+}
+
+.menu-mobile a:hover {
   text-decoration: underline;
 }
 
 /* Section 1 */
 .section-1 {
-  height: 182vh; /* Hauteur demandée */
+  height: 182vh;
   background-image: url('../images/Image1.png');
   background-size: cover;
   background-position: center;
@@ -69,11 +112,12 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 .left-content {
   width: 50%;
   color: #FFD9BE;
   text-align: center;
-  margin-left: 5%; /* Décalage vers la gauche */
+  margin-left: 5%;
 }
 
 .left-content h1 {
@@ -110,15 +154,14 @@ header {
   padding: 5rem 5%;
   background-color: #EF9C82;
   display: flex;
-  flex-wrap: wrap; /* Permet de passer à une ligne unique sur mobile */
+  flex-wrap: wrap;
   align-items: center;
   gap: 3rem;
 }
 
 .text-content {
-  flex: 1 1 50%; /* 50% de la largeur, mais flexible */
+  flex: 1 1 50%;
   max-width: 600px;
-  padding-right: 2rem;
 }
 
 .text-content h2 {
@@ -164,10 +207,9 @@ header {
 }
 
 .image-content {
-  flex: 1 1 50%; /* 50% de la largeur */
+  flex: 1 1 50%;
   display: flex;
-  justify-content: flex-end; /* Centre l'image à droite */
-  align-items: center;
+  justify-content: center;
 }
 
 .image-content img {
@@ -180,15 +222,21 @@ header {
 
 /* Responsive */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 0.8rem;
+  /* Afficher le burger */
+  .menu-toggle {
+    display: flex;
   }
 
-  .menu {
-    gap: 1rem;
-    font-size: 0.9rem;
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-mobile.active {
+    display: flex;
   }
 
   .section-1 {
@@ -219,11 +267,6 @@ header {
 }
 
 @media (max-width: 480px) {
-  .menu {
-    gap: 0.8rem;
-    font-size: 0.85rem;
-  }
-
   .left-content h1 {
     font-size: 2rem;
     line-height: 40px;
